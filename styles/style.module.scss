@@ -1,0 +1,9 @@
+@import "./colors";
+@import "./mixin";
+
+.container {
+  width: 100%;
+  max-width: 1600px;
+  padding: 0 18px;
+  margin: 0 auto;
+}

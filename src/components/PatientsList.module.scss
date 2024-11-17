@@ -1,0 +1,74 @@
+@import "../../styles/style.module.scss";
+
+.PatientsListBox {
+  background: $white;
+  @include border-radius(16px);
+  padding: 20px 0;
+}
+
+.searchBox {
+  padding: 0 20px;
+  @include flex(center, space-between, row);
+
+  h3 {
+    margin: 0;
+    font-size: 24px;
+    line-height: 33px;
+    color: $textBlack;
+  }
+}
+.patientList {
+  max-height: 100vh;
+  overflow-y: auto;
+
+  ul {
+    list-style: none;
+    margin: 40px 0 0;
+    padding: 0;
+
+    li {
+      padding: 16px 16px 16px 20px;
+      margin: 0;
+      cursor: pointer;
+      @include flex(center, space-between, row);
+
+      &.active,
+      &:hover {
+        background-color: #d8fcf7;
+      }
+
+      .moreIcon {
+        width: 18px;
+      }
+
+      .listWrap {
+        gap: 12px;
+        @include flex(center, flex-start, row);
+      }
+
+      img {
+        width: 48px;
+        height: 48px;
+        @include border-radius(50%);
+      }
+
+      h4 {
+        margin: 0;
+      }
+      p {
+        color: $gray;
+        margin: 0;
+      }
+    }
+  }
+}
+
+.loadingBox {
+  @include border-radius(16px);
+  background-color: $white;
+  width: 100%;
+  text-align: center;
+  padding: 20px;
+  min-height: 300px;
+  font-size: 20px;
+}

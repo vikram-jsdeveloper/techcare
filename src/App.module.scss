@@ -1,0 +1,15 @@
+@import "../styles/style.module.scss";
+
+.wrapper {
+  display: flex;
+  gap: 30px;
+}
+.leftSection {
+  min-width: 23%;
+}
+.centerSection {
+  min-width: 50%;
+}
+.rightSection {
+  min-width: 23%;
+}
